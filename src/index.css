@@ -1,0 +1,11 @@
+:root{
+    --grey-blue: rgb(183, 196, 207);
+    --beige: rgb(238, 227, 203);
+    --light-brown: rgb(215, 192, 174);
+    --brown:rgb(150, 126, 118)
+}
+*{
+    background: linear-gradient(to right, var(--grey-blue), var(--beige), var(--light-brown), var(--brown));
+    margin:0;
+    padding:0;
+}

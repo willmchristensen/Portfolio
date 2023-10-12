@@ -1,0 +1,7 @@
+.sidebar-item{
+    list-style: none;
+    background: none;
+    padding: 2rem;
+    border: 1px solid yellow;
+    border-radius: 10px;
+}
