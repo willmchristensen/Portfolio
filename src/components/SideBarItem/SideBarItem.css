@@ -1,7 +1,33 @@
 .sidebar-item{
+    display: flex;
+    align-items: center;
     list-style: none;
     background: none;
-    padding: 2rem;
+    width: calc(85% - 1rem);
+    padding: 1rem;
     border: 1px solid yellow;
     border-radius: 10px;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+}
+.sidebar-item-text{
+    background-color: none;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+.sidebar-item > i{
+    background-color: none;
+    padding-right: 1rem;
+    transition: background-color 0.3s;
+}
+.sidebar-item:hover{
+    cursor: pointer;
+    background-color: var(--light-brown);
+}
+.sidebar-item:hover .sidebar-item-text{
+    background-color: var(--light-brown);
+}
+.sidebar-item:hover i{
+    background-color: var(--light-brown);
 }

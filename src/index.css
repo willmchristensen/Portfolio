@@ -5,7 +5,7 @@
     --brown:rgb(150, 126, 118)
 }
 *{
-    background: linear-gradient(to right, var(--grey-blue), var(--beige), var(--light-brown), var(--brown));
+    background-color:var(--grey-blue);
     margin:0;
     padding:0;
 }

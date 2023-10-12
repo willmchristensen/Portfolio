@@ -1,9 +1,14 @@
 import './SideBarItem.css';
-function SideBarItem({item}){
+
+function SideBarItem({icon,item}){
     return(
         <li className="sidebar-item">
-            {item}
+            {icon}
+            <span className="sidebar-item-text">
+                {item}  
+            </span>
         </li>
     )
 }
+
 export default SideBarItem;
