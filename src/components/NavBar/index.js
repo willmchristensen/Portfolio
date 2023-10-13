@@ -25,7 +25,11 @@ function NavBar() {
                         >
                         </i>
                     </li>
-                    <SideBar menuClassName={menuClassName}/>
+                    <SideBar 
+                        menuClassName={menuClassName}
+                        setShowMenu={setShowMenu}
+                        showMenu={showMenu}
+                    />
                 </div>
                 <li className='navbar-item'>
                     will christensen

@@ -2,16 +2,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5vh;
+    margin-top: 1rem;
 }
 .navbar-item{
     list-style: none;
     background: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding: 1.5rem;
     margin: 0 1rem 1rem 1rem;
 }
 .fa-bars{
     background: none;
+    transition: color 0.3s ease-in-out;
 }
 .fa-bars:hover{
     cursor: pointer;
@@ -22,18 +24,4 @@
     justify-content: flex-start;
     align-items: center;
     width: 25%;
-}
-.sidebar{
-    border: 1px solid rgb(177, 177, 255);
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    border-radius:10px;
-    height: 70vh;
-    top:3rem;
-    width:15rem;
-    margin: 0 1rem 1rem 1rem;
-}
-.hidden{
-    display: none;
 }

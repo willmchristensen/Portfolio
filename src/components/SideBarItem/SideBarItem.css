@@ -3,31 +3,33 @@
     align-items: center;
     list-style: none;
     background: none;
-    width: calc(85% - 1rem);
+    width: calc(100% - 1rem);
     padding: 1rem;
-    border: 1px solid yellow;
     border-radius: 10px;
     font-size: 1.5rem;
     transition: background-color 0.3s;
 }
 .sidebar-item-text{
-    background-color: none;
+    background-color: var(--black);
     display: flex;
     align-items: center;
     transition: background-color 0.3s;
 }
 .sidebar-item > i{
-    background-color: none;
-    padding-right: 1rem;
+    width:2.5rem;
+    background-color: var(--black);
+    margin: 0;
     transition: background-color 0.3s;
 }
 .sidebar-item:hover{
     cursor: pointer;
-    background-color: var(--light-brown);
+    background-color: var(--dark-grey);
 }
 .sidebar-item:hover .sidebar-item-text{
-    background-color: var(--light-brown);
+    background-color: var(--dark-grey);
+    color: var(--blue);
 }
 .sidebar-item:hover i{
-    background-color: var(--light-brown);
+    background-color: var(--dark-grey);
+    color: var(--blue);
 }

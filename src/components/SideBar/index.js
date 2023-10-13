@@ -16,9 +16,21 @@ const sideBarIcons = [
 ]
 
 
-function SideBar({menuClassName}){
+function SideBar({showMenu,setShowMenu,menuClassName}){
+
+    const handleClick = () => {
+        setShowMenu(!showMenu)
+    }
+
     return(
         <div className={menuClassName}>
+            <li className='navbar-item'>
+                <i 
+                    class="fas fa-bars"
+                    onClick={handleClick}
+                >
+                </i>
+            </li>
             <ul className='sidebar-items-container'>
                 {
                     sideBarItems.map((item, index) => {
