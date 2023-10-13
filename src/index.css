@@ -5,7 +5,8 @@
     --light-grey: rgb(238, 238, 238);
 }
 *{
-    background-color:var(--black);
+    color: var(--black);
+    background-color:var(--light-grey);
     margin:0;
     padding:0;
 }

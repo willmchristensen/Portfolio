@@ -10,14 +10,14 @@
     transition: background-color 0.3s;
 }
 .sidebar-item-text{
-    background-color: var(--black);
+    background-color: var(--blue);
     display: flex;
     align-items: center;
     transition: background-color 0.3s;
 }
 .sidebar-item > i{
     width:2.5rem;
-    background-color: var(--black);
+    background-color: var(--blue);
     margin: 0;
     transition: background-color 0.3s;
 }
@@ -27,9 +27,9 @@
 }
 .sidebar-item:hover .sidebar-item-text{
     background-color: var(--dark-grey);
-    color: var(--blue);
+    color: var(--light-grey);
 }
 .sidebar-item:hover i{
     background-color: var(--dark-grey);
-    color: var(--blue);
+    color: var(--light-grey);
 }

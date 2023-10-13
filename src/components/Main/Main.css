@@ -1,0 +1,61 @@
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50vh;
+    width: 90%;
+}
+.main-text{
+    width: 25ch;
+}
+.portrait{
+    position: relative;
+    z-index: 3;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.portrait-container{
+    position: relative;
+}
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.first{
+    z-index: 2;
+    top: -.25rem;
+    left: -.25rem;
+    width: 15.5rem;
+    height: 15.5rem;
+    background-color: var(--blue);
+}
+.second{
+    z-index: 1;
+    top: -.5rem;
+    left: -.5rem;
+    width: 16rem;
+    height: 16rem;
+    background-color: var(--dark-grey);
+}
+.third{
+    z-index: 0;
+    top: -.75rem;
+    left: -.75rem;
+    width: 16.5rem;
+    height: 16.5rem;
+    background-color: var(--black);
+}
