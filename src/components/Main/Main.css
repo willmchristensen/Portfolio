@@ -3,16 +3,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* background-color: var(--dark-grey); */
 }
 .main-container{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 50vh;
     width: 90%;
+    /* background-color: var(--dark-grey); */
 }
 .main-text{
+    font-size: 3rem;
     width: 25ch;
+    /* background-color: var(--dark-grey); */
+    color: var(--dark-grey);
+}
+.main-text-subheader{
+    color: var(--dark-grey);
 }
 .portrait{
     position: relative;
@@ -23,6 +31,7 @@
     object-fit: cover;
 }
 .portrait-container{
+    /* background-color: var(--dark-grey); */
     position: relative;
 }
 .circle{
@@ -41,7 +50,7 @@
     left: -.25rem;
     width: 15.5rem;
     height: 15.5rem;
-    background-color: var(--blue);
+    background-color: var(--light-grey);
 }
 .second{
     z-index: 1;
@@ -49,7 +58,8 @@
     left: -.5rem;
     width: 16rem;
     height: 16rem;
-    background-color: var(--dark-grey);
+    background-color: var(--blue);
+
 }
 .third{
     z-index: 0;
@@ -58,4 +68,5 @@
     width: 16.5rem;
     height: 16.5rem;
     background-color: var(--black);
+
 }

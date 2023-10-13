@@ -3,11 +3,15 @@ import { useState } from 'react';
 import SideBar from '../SideBar';
 
 function NavBar() {
-    const [showMenu, setShowMenu] = useState(true);
+    const [showMenu, setShowMenu] = useState(false);
     const menuClassName = showMenu ? 'sidebar' : 'hidden';
 
     const handleClick = () => {
-        setShowMenu(!showMenu)
+        if(showMenu){
+            setShowMenu(false)
+        }else{
+            setShowMenu(true)
+        }
     }
 
     return (
@@ -31,9 +35,6 @@ function NavBar() {
                         showMenu={showMenu}
                     />
                 </div>
-                <li className='navbar-item'>
-                    will christensen
-                </li>
             </ul>
         </nav>
     )
