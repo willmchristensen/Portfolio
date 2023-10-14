@@ -3,7 +3,6 @@
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-    z-index: 1;
     background-color: var(--light-grey);
 }
 .navbar-item{
@@ -18,18 +17,4 @@
 }
 .navbar-name{
  font-weight: bolder;   
-}
-.fa-bars{
-    background: none;
-    transition: color 0.3s ease-in-out;
-}
-.fa-bars:hover{
-    cursor: pointer;
-}
-.navbar-item-wrapper{
-    background: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 25%;
 }

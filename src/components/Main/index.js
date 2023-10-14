@@ -1,6 +1,9 @@
 import './Main.css'
+import NavBar from '../NavBar';
 function Main() {
   return (
+    <>
+    <NavBar></NavBar>
     <div className="main-wrapper">
       <div className="main-container">
         <div className="main-text-container">
@@ -25,6 +28,7 @@ function Main() {
         </div>
       </div>
     </div>
+    </>
   )
 }
 export default Main;
