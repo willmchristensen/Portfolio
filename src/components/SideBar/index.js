@@ -1,6 +1,6 @@
 import './SideBar.css'
 import SideBarItem from '../SideBarItem';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const sideBarItems = [
     'Home',
@@ -14,25 +14,30 @@ const sideBarItems = [
 const sideBarIcons = [
     <i class="fas fa-home"></i>,
     <i class="fas fa-id-card"></i>,
-    <i class="fa-solid fa-star"></i>,
+    <i class="fas fa-sliders-h"></i>,
     <i class="fas fa-project-diagram"></i>,
-    <i class="fas fa-address-book"></i>
+    <i class="fas fa-address-book"></i>,
+    <i class="fas fa-mobile-alt"></i>
 ]
 
 
-function SideBar({showMenu,setShowMenu,menuClassName}){
-    const handleClick = () => {
-        if(showMenu){
-            setShowMenu(false)
-        }else{
-            setShowMenu(true)
-        }
-    }
-    const sidebarRef = useRef(null);
+function SideBar(){
+    const [showMenu, setShowMenu] = useState(false);
+    const menuClassName = 'sidebar' + (showMenu ? '' : ' hidden');
+
+    const sidebarRef = useRef();
+
     useEffect(() => {
-        const handleClickOutside = (e) => {
-            console.log(e.target.className);
-            if(sidebarRef.current && !sidebarRef.current.contains(e.target)){
+        console.log('useEffect', showMenu)
+        if (!showMenu){
+            console.log('!showMenu in useEffect, so we are returning from useEffect')
+            return;
+        }
+        const closeMenu = (e) => {
+            if(showMenu && 
+                sidebarRef.current && 
+                !sidebarRef.current.contains(e.target
+            )){
                 setShowMenu(false);
             }else if(
                 e.target.className === 'sidebar-item' || 
@@ -43,36 +48,40 @@ function SideBar({showMenu,setShowMenu,menuClassName}){
                 setShowMenu(false);
             }
         };
-        document.addEventListener('mousedown',handleClickOutside);
+        document.addEventListener('mousedown',closeMenu);
         return () => {
-            document.removeEventListener('mousedown',handleClickOutside);
+            document.removeEventListener('mousedown',closeMenu);
         }
-    },[sidebarRef,setShowMenu]);
+    },[showMenu]);
+
+    const toggleMenu = () => {
+        setShowMenu(prevState => !prevState);
+    }
 
     return(
-        <div className={menuClassName} ref={sidebarRef}>
-            <li className='bars-icon-container'>
-                <i 
-                    class="fas fa-bars"
-                    onClick={handleClick}
-                    id='bars-icon'
-                >
-                </i>
+        <>  
+            <li
+                className='navbar-item'
+                onClick={toggleMenu}
+            >
+                <i class="fas fa-bars"></i>
             </li>
-            <ul className='sidebar-items-container'>
-                {
-                    sideBarItems.map((item, index) => {
-                        return(
-                            <SideBarItem
-                                key={index}
-                                item={item}
-                                icon={sideBarIcons[index]} 
-                            />
-                        )
-                    })
-                }
-            </ul>
-        </div>
+            <div className={menuClassName} ref={sidebarRef}>
+                <ul className='sidebar-items-container'>
+                    {
+                        sideBarItems.map((item, index) => {
+                            return(
+                                <SideBarItem
+                                    key={index}
+                                    item={item}
+                                    icon={sideBarIcons[index]} 
+                                />
+                            )
+                        })
+                    }
+                </ul>
+            </div>
+        </>
     )
 }
 
