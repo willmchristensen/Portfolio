@@ -29,7 +29,7 @@
     background-color: var(--dark-grey);
     color: var(--light-grey);
 }
-.sidebar-item:hover .sidebar-item-icon{
+.sidebar-item:hover i{
     background-color: var(--dark-grey);
     color: var(--light-grey);
 }
