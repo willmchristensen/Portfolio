@@ -20,14 +20,7 @@ const sideBarIcons = [
     <i class="fas fa-code-branch"></i>,
     <i class="fas fa-address-book"></i>
 ]
-const sideBarIconClassNames = [
-    'fas fa-home',
-    'fas fa-id-card',
-    'fas fa-sliders-h',
-    'fas fa-project-diagram',
-    'fas fa-code-branch',
-    'fas fa-address-book'
-]
+
 
 function SideBar() {
     const [showMenu, setShowMenu] = useState(false);
@@ -43,9 +36,7 @@ function SideBar() {
                 !sidebarRef.current.contains(event.target) ||
                 event.target.className ===  'sidebar-item-icon' ||
                 event.target.className === 'sidebar-item-text' ||
-                event.target.className === 'sidebar-item' || 
-                sideBarIconClassNames.includes(event.target.className)
-                ) {
+                event.target.className === 'sidebar-item') {
                 closeMenu();
             }
         }
@@ -55,9 +46,8 @@ function SideBar() {
         }
     }, [sidebarRef]);
 
-
     return (
-        <>
+        <div className='sidebar-container'>
             <Hamburger showMenu={showMenu} setShowMenu={setShowMenu} />
             <ul className={menuClassName} ref={sidebarRef}>
                 {
@@ -72,7 +62,7 @@ function SideBar() {
                     })
                 }
             </ul>
-        </>
+        </div>
     )
 }
 

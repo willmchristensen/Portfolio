@@ -1,8 +1,7 @@
-.navbar-container{
+.navbar{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
+    justify-content: space-evenly;
+    padding: 2rem 0;
     background-color: var(--light-grey);
 }
 .navbar-item{
@@ -17,4 +16,20 @@
 }
 .navbar-name{
  font-weight: bolder;   
+}
+.mobile-menu{
+    border: 1px solid red;
+}
+.sidebar-container{
+    display: none;
+}
+.mobile-menu-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+@media screen and (max-width: 425px) {
+    .sidebar-container{
+        display:block;
+    }
 }
