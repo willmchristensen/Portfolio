@@ -1,3 +1,5 @@
+import './NavBarItem.css'
+
 function NavBarItem({item}){
     return(
         <li className="navbar-item-container">

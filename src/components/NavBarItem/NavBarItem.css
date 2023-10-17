@@ -1,0 +1,14 @@
+.navbar-item-container{
+    color: var(--light-grey);
+    background-color: none;
+    list-style: none;
+    background: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 0 1rem 1rem 1rem;
+    height: 1rem;
+}
+.navbar-item-container:hover{
+    cursor: pointer;
+    color: var(--blue);
+}

@@ -1,0 +1,18 @@
+.skill-level-container{
+    position: relative;
+    height: 1rem;
+    width: 25vw;
+    background-color: var(--light-grey);
+    border: 0.1rem solid var(--dark-grey);
+    border-radius: 10px;
+}
+.skill-level{
+    position: absolute;
+    height: 1rem;
+    width: 25vw;
+    background-color: var(--blue);
+    border-radius: 10px;
+}
+.seventy-five{
+    width: calc(.75 * 25vw);
+}
