@@ -1,6 +1,6 @@
 import './SideBar.css'
-import Hamburger from '../Hamburger';
-import SideBarItem from '../SideBarItem';
+import Hamburger from './Hamburger';
+import SideBarItem from './SideBarItem';
 import { useEffect, useRef, useState } from 'react';
 
 const sideBarItems = [

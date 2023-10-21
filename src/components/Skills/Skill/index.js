@@ -2,16 +2,14 @@ function Skill({skill,percentage}) {
 
     const percentages = {
         70: 'seventy',
-        75: 'seventy-five',
-        90: 'ninety'
+        50: 'fifty'
     }
 
     const skillLevelClass = "skill-level " + (percentages[percentage]);
 
-    
     return (
         <div className="skill-container">
-            <span className="skill-title">{skill}</span>
+            <h3 className="skill-title">{skill}</h3>
             <div className="skill-level-container">
                 <div className={skillLevelClass}></div>
             </div>

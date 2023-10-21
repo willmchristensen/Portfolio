@@ -2,13 +2,6 @@ import './Main.css'
 import NavBar from '../NavBar';
 import Skills from '../Skills';
 
-const skills = {
-  'Javascript': 75,
-  'Python': 75,
-  'HTML5': 75,
-  'CSS3': 75
-}
-
 function Main() {
   return (
     <>
@@ -37,7 +30,7 @@ function Main() {
         </div>
       </div>
     </div>
-    <Skills skills={skills}/>
+    <Skills />
     </>
   )
 }

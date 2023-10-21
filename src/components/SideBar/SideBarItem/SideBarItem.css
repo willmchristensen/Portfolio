@@ -1,6 +1,7 @@
 .sidebar-item{
     display: flex;
     align-items: center;
+    justify-content: center;
     list-style: none;
     background: none;
     width: calc(100% - 1rem);

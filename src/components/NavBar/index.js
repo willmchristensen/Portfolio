@@ -1,6 +1,6 @@
 import './NavBar.css';
 import SideBar from '../SideBar';
-import NavBarItem from '../NavBarItem';
+import NavBarItem from './NavBarItem';
 
 const sideBarItems = [
     'Home',

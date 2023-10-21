@@ -1,7 +1,29 @@
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills-title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.skills-dropdowns-container{
+    display: flex;
+    gap: 2rem;
+}
+.skills-title{
+    font-size: 2.5rem;
+}
+.skill-container{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
 .skill-level-container{
     position: relative;
     height: 1rem;
-    width: 25vw;
+    width: 35vw;
     background-color: var(--light-grey);
     border: 0.1rem solid var(--dark-grey);
     border-radius: 10px;
@@ -9,10 +31,16 @@
 .skill-level{
     position: absolute;
     height: 1rem;
-    width: 25vw;
+    width: 35vw;
     background-color: var(--blue);
     border-radius: 10px;
 }
-.seventy-five{
-    width: calc(.75 * 25vw);
+.seventy{
+    width: calc(.70 * 35vw);
+}
+.fifty{
+    width: calc(.50 * 35vw);
+}
+.skill-title{
+    font-size: 1rem;
 }
