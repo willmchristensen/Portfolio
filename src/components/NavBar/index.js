@@ -1,8 +1,8 @@
 import './NavBar.css';
-import SideBar from '../SideBar';
+import MobileFooter from '../MobileFooter';
 import NavBarItem from './NavBarItem';
 
-const sideBarItems = [
+const items = [
     'Home',
     'About',
     'Skills',
@@ -11,16 +11,25 @@ const sideBarItems = [
     'Contact'
 ];
 
+const  icons = [
+    <i class="fas fa-home"></i>,
+    <i class="fas fa-id-card"></i>,
+    <i class="fas fa-sliders-h"></i>,
+    <i class="fas fa-project-diagram"></i>,
+    <i class="fas fa-code-branch"></i>,
+    <i class="fas fa-address-book"></i>
+]
+
 function NavBar() {
     
     return (
         <nav>
             <div className="mobile-menu-container">
-                <SideBar />
+                <MobileFooter items={items} icons={icons}/>
             </div>
             <ul className="navbar">
                 {
-                    sideBarItems.map((item,index) => {
+                    items.map((item,index) => {
                         return(
                             <NavBarItem 
                                 key={index}

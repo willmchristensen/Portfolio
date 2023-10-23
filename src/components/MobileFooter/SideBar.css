@@ -1,17 +1,22 @@
-.sidebar{
+.mobile-menu{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--blue);
     gap:.1rem;
     position: absolute;
-    top: 4.5rem;
+    bottom: 4.5rem;
     background-color: var(--blue);
     border-radius:10px;
-    z-index: 4;
-    width: 10rem;
+    width: 90vw;
+}
+.mobile-menu-row{
+    width: 100%;
 }
 .hidden{
     display: none;
+}
+.mobile-footer{
+    height: 4rem;
+    width: 100%;
+    border-top: 1px solid var(--dark-grey);
 }

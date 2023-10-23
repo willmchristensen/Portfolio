@@ -1,0 +1,40 @@
+.bars-icon-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    line-height: 0;
+    z-index: 1;
+}
+.bars-icon-button:hover{
+    cursor: pointer;
+}
+#bars-icon{
+    color: var(--black);
+    background-color: transparent;
+    list-style: none;
+    background: none;
+    font-size: 2rem;
+    line-height: 0;
+    z-index: 0;
+}
+.times-icon-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    line-height: 0;
+    z-index: 1;
+}
+.times-icon-button:hover{
+    cursor: pointer;
+}
+#times-icon{
+    color: var(--black);
+    background-color: transparent;
+    list-style: none;
+    background: none;
+    font-size: 2rem;
+    line-height: 0;
+    z-index: 0;
+}

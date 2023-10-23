@@ -4,13 +4,13 @@
     justify-content: center;
     list-style: none;
     background: none;
-    width: calc(100% - 1rem);
     padding: 1rem;
     border-radius: 10px;
     font-size: 1.5rem;
     transition: background-color 0.3s;
 }
 .sidebar-item-text{
+    width: 4rem;
     background-color: var(--blue);
     display: flex;
     align-items: center;
