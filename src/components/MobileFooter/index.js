@@ -42,7 +42,6 @@ function MobileFooter({ items, icons }) {
                     showMenu={showMenu}
                     setShowMenu={setShowMenu}
                 />
-                <h1>footer</h1>
             </footer>
             <ul
                 className={menuClassName}

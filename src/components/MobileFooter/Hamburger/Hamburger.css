@@ -4,7 +4,8 @@
     align-items: center;
     padding: 2rem;
     line-height: 0;
-    z-index: 1;
+    width: 2rem;
+    border: none;
 }
 .bars-icon-button:hover{
     cursor: pointer;
@@ -16,7 +17,6 @@
     background: none;
     font-size: 2rem;
     line-height: 0;
-    z-index: 0;
 }
 .times-icon-button{
     display: flex;
@@ -24,7 +24,8 @@
     align-items: center;
     padding: 2rem;
     line-height: 0;
-    z-index: 1;
+    width: 2rem;
+    border: none;
 }
 .times-icon-button:hover{
     cursor: pointer;
@@ -36,5 +37,4 @@
     background: none;
     font-size: 2rem;
     line-height: 0;
-    z-index: 0;
 }

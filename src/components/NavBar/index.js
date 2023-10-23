@@ -24,9 +24,7 @@ function NavBar() {
     
     return (
         <nav>
-            <div className="mobile-menu-container">
-                <MobileFooter items={items} icons={icons}/>
-            </div>
+            <MobileFooter items={items} icons={icons}/>
             <ul className="navbar">
                 {
                     items.map((item,index) => {
