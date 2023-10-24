@@ -2,11 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 75vw;
 }
 .skills-title-container{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-bottom: 2rem;
 }
 .skills-dropdowns-container{

@@ -4,6 +4,9 @@
     --blue: rgb(0, 173, 181);
     --light-grey: rgb(238, 238, 238);
     --title: 3rem;
+    --mobile-title: 2rem;
+    --subtitle: 1.5rem;
+    --mobile-subtitle: 1rem;
 }
 *{
     color: var(--black);

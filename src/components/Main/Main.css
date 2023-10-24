@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 75vw;
 }
 .main-text-container{
     width: 100%;
@@ -16,8 +17,10 @@
 .main-text{
     font-size: var(--title);
     color: var(--black);
+    width: 25ch;
 }
 .main-text-subheader{
+    width: 35ch;
     color: var(--black);
 }
 .portrait{
@@ -33,6 +36,7 @@
     flex-direction: row-reverse;
     justify-content: space-evenly;
     width: 100%;
+    margin-bottom: 1rem;
 }
 .portrait-container{
     position: relative;

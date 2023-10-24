@@ -27,19 +27,21 @@ const skills = [
 
 function Skills() {
     return (
-        <div className="skills-container">
-            <div className="skills-title-container">
-                <h2 className='skills-title'>Skills</h2>
-                <span>My technical level</span>
-            </div>
-            <div className="skills-dropdowns-container">
-                {
-                    skills.map(skill => {
-                        return (
-                            <SkillDropDown skill={skill} />
-                        )
-                    })
-                }
+        <div className="main-wrapper">
+            <div className="skills-container">
+                <div className="skills-title-container">
+                    <h1 className='main-text'>Skills</h1>
+                    <h3 className='main-text-subheader'>My technical level</h3>
+                </div>
+                <div className="skills-dropdowns-container">
+                    {
+                        skills.map(skill => {
+                            return (
+                                <SkillDropDown skill={skill} />
+                            )
+                        })
+                    }
+                </div>
             </div>
         </div>
     )
