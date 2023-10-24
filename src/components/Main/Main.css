@@ -22,6 +22,7 @@
 .main-text-subheader{
     width: 35ch;
     color: var(--black);
+    font-weight: lighter;
 }
 .portrait{
     position: relative;

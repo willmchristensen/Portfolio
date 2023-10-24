@@ -44,9 +44,6 @@
         justify-content: center;
         font-size:var(--mobile-title);
     }
-    .skills-title{
-        font-size:var(--mobile-title);
-    }
     .main-text-subheader{
         display: flex;
         justify-content: center;
