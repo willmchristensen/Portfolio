@@ -16,7 +16,8 @@
     display: none;
 }
 .mobile-footer{
+    display: flex;
+    justify-content: flex-end;
     height: 4rem;
     width: 100%;
-    border-top: 1px solid var(--dark-grey);
 }

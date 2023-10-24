@@ -1,0 +1,12 @@
+.mobile-portrait-buttons-container{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .mobile-portrait-buttons-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+    }
+}

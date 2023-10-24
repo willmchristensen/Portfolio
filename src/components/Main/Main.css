@@ -10,9 +10,11 @@
     align-items: center;
     justify-content: center;
 }
+.main-text-container{
+    width: 100%;
+}
 .main-text{
-    font-size: 3rem;
-    width: 25ch;
+    font-size: var(--title);
     color: var(--black);
 }
 .main-text-subheader{
@@ -26,8 +28,13 @@
     border-radius: 50%;
     object-fit: cover;
 }
+.portrait-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 100%;
+}
 .portrait-container{
-    /* background-color: var(--dark-grey); */
     position: relative;
 }
 .circle{

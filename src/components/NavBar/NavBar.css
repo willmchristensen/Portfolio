@@ -29,10 +29,9 @@
     }
     .main-container{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
-        height: 25vh;
     }
     .main-text-container{
         display: flex;
@@ -42,29 +41,31 @@
     }
     .main-text{
         font-size:1.5rem;
-        width: 100%;
     }
     .main-text-subheader{
         font-size: 1rem;
         font-weight: lighter;
     }
     .portrait-container{
-        margin-top: 1rem;
+        margin: 1rem;
     }
     .portrait{
-        width: 7.5rem;
-        height: 7.5rem;
+        width: 10rem;
+        height: 10rem;
     }
     .first{
-        width: 8rem;
-        height: 8rem;
+        width: 10.5rem;
+        height: 10.5rem;
     }
     .second{
-        width: 8.5rem;
-        height: 8.5rem;
+        width: 11rem;
+        height: 11rem;
     }
     .third{
-        width: 9rem;
-        height: 9rem;
+        width: 11.5rem;
+        height: 11.5rem;
+    }
+    .skills-dropdowns-container{
+        flex-direction: column;
     }
 }

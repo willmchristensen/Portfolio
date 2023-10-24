@@ -3,6 +3,7 @@
     --dark-grey: rgb(57, 62, 70);
     --blue: rgb(0, 173, 181);
     --light-grey: rgb(238, 238, 238);
+    --title: 3rem;
 }
 *{
     color: var(--black);

@@ -2,17 +2,18 @@ import './SkillDropDown.css'
 import Skill from "../Skill"
 import { useState } from 'react';
 
-function SkillDropDown({skill}){
+function SkillDropDown({ skill }) {
 
     const titles = Object.keys(skill.skills);
     const percentages = Object.values(skill.skills);
     const [isOpen, setIsOpen] = useState(false);
     const dropDownSkillsClass = isOpen ? "dropdown-skills-container" : 'hidden';
-    return(
+    const toggleDropDown = () => setIsOpen(!isOpen);
+    return (
         <div className="dropdown-container">
             <div className="dropdown-title-container">
                 <div className="dropdown-title-icon">
-                    {skill.icon}    
+                    {skill.icon}
                 </div>
                 <div className="dropdown-text">
                     <h3>{skill.expertise}</h3>
@@ -21,30 +22,30 @@ function SkillDropDown({skill}){
                     </span>
                 </div>
                 {
-                    isOpen ? 
-                    <i 
-                        class="fas fa-caret-up"
-                        onClick={() => setIsOpen(!isOpen)}
-                    ></i>
-                    :
-                    <i 
-                        class="fas fa-caret-down"
-                        onClick={() => setIsOpen(!isOpen)}
-                    ></i>
+                    isOpen ?
+                        <i
+                            class="fas fa-caret-up"
+                            onClick={toggleDropDown}
+                        ></i>
+                        :
+                        <i
+                            class="fas fa-caret-down"
+                            onClick={toggleDropDown}
+                        ></i>
                 }
             </div>
             <div className={dropDownSkillsClass}>
                 {
-                    titles.map((title,index) => {
-                        return(
-                            <Skill 
-                                key={index} 
-                                skill={title} 
+                    titles.map((title, index) => {
+                        return (
+                            <Skill
+                                key={index}
+                                skill={title}
                                 percentage={percentages[index]}
                             />
                         )
                     })
-                }   
+                }
             </div>
         </div>
     )

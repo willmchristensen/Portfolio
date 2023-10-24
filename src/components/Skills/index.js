@@ -5,8 +5,8 @@ const skills = [
         expertise: 'Frontend developer',
         time: '2',
         icon: <i class="fas fa-code"></i>,
-        skills:{
-            'HTML5':70,
+        skills: {
+            'HTML5': 70,
             'CSS3': 70,
             'JavaScript': 70,
             'React': 70,
@@ -16,8 +16,8 @@ const skills = [
         expertise: 'Backend developer',
         time: '1',
         icon: <i class="fas fa-server"></i>,
-        skills:{
-            'Python':50,
+        skills: {
+            'Python': 50,
             'Node Js': 50,
             'SQL': 50,
             'Sequelize': 50,
@@ -25,9 +25,8 @@ const skills = [
     }
 ];
 
-
-function Skills(){
-    return(
+function Skills() {
+    return (
         <div className="skills-container">
             <div className="skills-title-container">
                 <h2 className='skills-title'>Skills</h2>
