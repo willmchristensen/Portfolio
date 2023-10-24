@@ -1,0 +1,75 @@
+.portrait{
+    position: relative;
+    z-index: 3;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.portrait-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.portrait-container{
+    position: relative;
+}
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.first{
+    z-index: 2;
+    top: -.25rem;
+    left: -.25rem;
+    width: 15.5rem;
+    height: 15.5rem;
+    background-color: var(--dark-grey);
+}
+.second{
+    z-index: 1;
+    top: -.5rem;
+    left: -.5rem;
+    width: 16rem;
+    height: 16rem;
+    background-color: var(--blue);
+
+}
+.third{
+    z-index: 0;
+    top: -.75rem;
+    left: -.75rem;
+    width: 16.5rem;
+    height: 16.5rem;
+    background-color: var(--black);
+
+}
+@media screen and (max-width:768px) {
+    /* .portrait-container{
+        margin: 1rem;
+    }
+    .portrait{
+        width: 15rem;
+        height: 15rem;
+    }
+    .first{
+        width: 15.5rem;
+        height: 15.5rem;
+    }
+    .second{
+        width: 11rem;
+        height: 11rem;
+    }
+    .third{
+        width: 11.5rem;
+        height: 11.5rem;
+    } */
+}

@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 75vw;
+    width: 90vw;
 }
 .main-text-container{
     width: 100%;
@@ -23,58 +23,4 @@
     width: 35ch;
     color: var(--black);
     font-weight: lighter;
-}
-.portrait{
-    position: relative;
-    z-index: 3;
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50%;
-    object-fit: cover;
-}
-.portrait-wrapper{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-bottom: 1rem;
-}
-.portrait-container{
-    position: relative;
-}
-.circle{
-    position: absolute;
-    border-radius: 50%;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-}
-.first{
-    z-index: 2;
-    top: -.25rem;
-    left: -.25rem;
-    width: 15.5rem;
-    height: 15.5rem;
-    background-color: var(--dark-grey);
-}
-.second{
-    z-index: 1;
-    top: -.5rem;
-    left: -.5rem;
-    width: 16rem;
-    height: 16rem;
-    background-color: var(--blue);
-
-}
-.third{
-    z-index: 0;
-    top: -.75rem;
-    left: -.75rem;
-    width: 16.5rem;
-    height: 16.5rem;
-    background-color: var(--black);
-
 }

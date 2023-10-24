@@ -3,6 +3,8 @@ import NavBar from '../NavBar';
 import Skills from '../Skills';
 import MobilePortraitButtons from '../MobilePortraitButtons';
 import MobileFooter from '../MobileFooter';
+import Portrait from './Portrait';
+import Button from '../Button';
 
 const items = [
   'Home',
@@ -37,18 +39,13 @@ function Main() {
             <h3 className="main-text-subheader">
               Full Stack Software Engineer
             </h3>
+            <Button 
+              text={'Contact Me'} 
+              icon={<i class="fas fa-angle-right"></i>}
+            />
           </div>
           <div className="portrait-wrapper">
-            <div className="portrait-container">
-              <div className="circle first"></div>
-              <div className="circle second"></div>
-              <div className="circle third"></div>
-              <img
-                className="portrait"
-                src="/assets/portrait.jpg"
-                alt="portrait-of-me"
-              />
-            </div>
+            <Portrait />
             <MobilePortraitButtons />
           </div>
         </div>

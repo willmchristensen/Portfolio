@@ -19,6 +19,9 @@
     width: 100%;
 }
 @media screen and (max-width: 768px) {
+    .main-wrapper{
+        height: 100vh;
+    }
     .sidebar-container{
         display:flex;
         width: 100%;
@@ -36,39 +39,21 @@
     .main-text-container{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
         justify-content: center;
     }
     .main-text{
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
         font-size:var(--mobile-title);
+        width: 100%;
     }
     .main-text-subheader{
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
         width: 100%;
         font-size: var(--mobile-subtitle);
         font-weight: lighter;
-    }
-    .portrait-container{
-        margin: 1rem;
-    }
-    .portrait{
-        width: 10rem;
-        height: 10rem;
-    }
-    .first{
-        width: 10.5rem;
-        height: 10.5rem;
-    }
-    .second{
-        width: 11rem;
-        height: 11rem;
-    }
-    .third{
-        width: 11.5rem;
-        height: 11.5rem;
     }
     .skills-dropdowns-container{
         flex-direction: column;

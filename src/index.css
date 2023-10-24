@@ -7,6 +7,8 @@
     --mobile-title: 2rem;
     --subtitle: 1.5rem;
     --mobile-subtitle: 1rem;
+    --button-border-radius:10px;
+    --button-padding:1.5rem;
 }
 *{
     color: var(--black);
