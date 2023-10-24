@@ -39,6 +39,9 @@ function Main() {
             <h3 className="main-text-subheader">
               Full Stack Software Engineer
             </h3>
+            <p className="main-text-paragraph">
+              Customer service expert looking to bridge the communication gap between developers and end users. 
+            </p>
             <Button 
               text={'Contact Me'} 
               icon={<i class="fas fa-angle-right"></i>}
