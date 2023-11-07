@@ -3,7 +3,7 @@ import Hamburger from './Hamburger';
 import SideBarItem from './SideBarItem';
 import { useEffect, useRef, useState } from 'react';
 
-function MobileFooter({ items, icons }) {
+function MobileMenu({ items, icons }) {
     const [showMenu, setShowMenu] = useState(false);
     const menuClassName = 'mobile-menu' + (showMenu ? '' : ' hidden')
     const mobileMenuRef = useRef();
@@ -13,6 +13,7 @@ function MobileFooter({ items, icons }) {
         const closeMenu = () => setShowMenu(false);
         const toggleMenu = () => setShowMenu(!showMenu);
         const listener = (event) => {
+            console.log('event.target.classList', event.target.classList);
             const isButton = event.target.classList.contains('custom-hamburger-button');
             const isIcon = event.target.classList.contains('fas');
             const isSidebar = event.target.classList.contains('sidebar-item') || event.target.classList.contains('sidebar-item-text') || event.target.classList.contains('sidebar-item-icon') ;
@@ -37,12 +38,12 @@ function MobileFooter({ items, icons }) {
 
     return (
         <div className='sidebar-container'>
-            <footer className='mobile-footer'>
+            <div className="mobile-footer">
                 <Hamburger
                     showMenu={showMenu}
                     setShowMenu={setShowMenu}
                 />
-            </footer>
+            </div>
             <ul
                 className={menuClassName}
                 ref={mobileMenuRef}
@@ -78,4 +79,4 @@ function MobileFooter({ items, icons }) {
     )
 }
 
-export default MobileFooter;
+export default MobileMenu;

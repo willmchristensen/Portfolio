@@ -23,7 +23,7 @@
         height: 100vh;
     }
     .sidebar-container{
-        display:flex;
+        display: flex;
         width: 100%;
         justify-content: center;
     }

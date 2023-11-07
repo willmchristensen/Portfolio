@@ -1,0 +1,10 @@
+.main-footer-container{
+    position: sticky;
+    bottom: 0;
+}
+.main-footer-wrapper{
+    width: 100%;
+}
+.footer-title{
+    font-size: 2rem;
+}

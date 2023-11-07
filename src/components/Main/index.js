@@ -2,9 +2,9 @@ import './Main.css'
 import NavBar from '../NavBar';
 import Skills from '../Skills';
 import MobilePortraitButtons from '../MobilePortraitButtons';
-import MobileFooter from '../MobileFooter';
 import Portrait from './Portrait';
 import Button from '../Button';
+import Footer from '../Footer';
 
 const items = [
   'Home',
@@ -54,7 +54,7 @@ function Main() {
         </div>
       </div>
       <Skills />
-      <MobileFooter items={items} icons={icons}/>
+      <Footer items={items} icons={icons}/>
     </>
   )
 }

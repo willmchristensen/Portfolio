@@ -1,11 +1,13 @@
 .bars-icon-button{
+    height: 3rem;
+    width: 3rem;
+    border:1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
     line-height: 0;
-    width: 2rem;
-    border: none;
+    /* border: none; */
 }
 .bars-icon-button:hover{
     cursor: pointer;
@@ -19,13 +21,15 @@
     line-height: 0;
 }
 .times-icon-button{
+    height: 3rem;
+    width: 3rem;
+    border:1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
     line-height: 0;
-    width: 2rem;
-    border: none;
+    /* border: none; */
 }
 .times-icon-button:hover{
     cursor: pointer;
