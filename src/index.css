@@ -4,9 +4,11 @@
     --blue: rgb(0, 173, 181);
     --light-grey: rgb(238, 238, 238);
     --title: 3rem;
-    --mobile-title: 2rem;
+    --mobile-title: 2.5rem;
     --subtitle: 1.5rem;
-    --mobile-subtitle: 1rem;
+    --mobile-subtitle: 1.5rem;
+    --paragraph:1.25rem;
+    --mobile-paragraph:0.75rem;
     --button-border-radius:10px;
     --button-padding:1.5rem;
 }

@@ -1,0 +1,10 @@
+.mobile-portrait-container{
+    display: flex;
+    width: 100%;
+}
+.mobile-portrait-image-container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-left: 25%;
+}

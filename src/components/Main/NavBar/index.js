@@ -13,8 +13,8 @@ const items = [
 function NavBar() {
     
     return (
-        <nav>
-            <ul className="navbar">
+        <nav className='navbar-wrapper'>
+            <ul className="navbar-container">
                 {
                     items.map((item,index) => {
                         return(

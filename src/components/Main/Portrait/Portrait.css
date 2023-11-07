@@ -1,15 +1,15 @@
 .portrait{
     position: relative;
     z-index: 3;
-    width: 15rem;
-    height: 15rem;
+    width: 18rem;
+    height: 18rem;
     border-radius: 50%;
     object-fit: cover;
 }
 .portrait-wrapper{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     width: 100%;
     margin-bottom: 1rem;
 }
@@ -20,9 +20,6 @@
     position: absolute;
     border-radius: 50%;
     background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 0 auto;
     margin-bottom: 1rem;
 }
@@ -30,16 +27,16 @@
     z-index: 2;
     top: -.25rem;
     left: -.25rem;
-    width: 15.5rem;
-    height: 15.5rem;
+    width: 18.5rem;
+    height: 18.5rem;
     background-color: var(--dark-grey);
 }
 .second{
     z-index: 1;
     top: -.5rem;
     left: -.5rem;
-    width: 16rem;
-    height: 16rem;
+    width: 19rem;
+    height: 19rem;
     background-color: var(--blue);
 
 }
@@ -47,13 +44,46 @@
     z-index: 0;
     top: -.75rem;
     left: -.75rem;
-    width: 16.5rem;
-    height: 16.5rem;
+    width: 19.5rem;
+    height: 19.5rem;
     background-color: var(--black);
-
 }
-@media screen and (max-width:768px) {
-    /* .portrait-container{
+@media screen and (min-width:425px) {
+    .portrait-container{
+        margin: 1rem;
+    }
+    .portrait{
+        width: 13rem;
+        height: 13rem;
+    }
+    .first{
+        width: 13.5rem;
+        height: 13.5rem;
+    }
+    .second{
+        width: 14rem;
+        height: 14rem;
+    }
+    .third{
+        width: 14.5rem;
+        height: 14.5rem;
+    }
+}
+@media screen and (min-width:769px){
+    .mobile-portrait-wrapper{
+        display: none;
+    }
+}
+@media screen and (max-width:768px){
+    .regular-portrait-wrapper{
+        display: none;
+    }
+    .mobile-portrait-wrapper{
+        display:flex;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .portrait-container{
         margin: 1rem;
     }
     .portrait{
@@ -65,11 +95,11 @@
         height: 15.5rem;
     }
     .second{
-        width: 11rem;
-        height: 11rem;
+        width: 16rem;
+        height: 16rem;
     }
     .third{
-        width: 11.5rem;
-        height: 11.5rem;
-    } */
+        width: 16.5rem;
+        height: 16.5rem;
+    }
 }

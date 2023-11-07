@@ -1,11 +1,10 @@
 import './Main.css'
-import NavBar from '../NavBar';
-import Skills from '../Skills';
-import MobilePortraitButtons from '../MobilePortraitButtons';
+import NavBar from './NavBar';
+import Skills from './Skills';
 import Portrait from './Portrait';
-import Button from '../Button';
-import Footer from '../Footer';
-
+import Button from './Button';
+import Footer from './Footer';
+import MobilePortrait from './MobilePortrait';
 const items = [
   'Home',
   'About',
@@ -15,7 +14,7 @@ const items = [
   'Contact'
 ];
 
-const  icons = [
+const icons = [
   <i class="fas fa-home"></i>,
   <i class="fas fa-id-card"></i>,
   <i class="fas fa-sliders-h"></i>,
@@ -28,33 +27,35 @@ function Main() {
   return (
     <>
       <NavBar></NavBar>
-      <div className="main-wrapper">
-        <div className="main-container">
-          <div className="main-text-container">
-            <h1
-              className='main-text'
-            >
-              Hi, I am Will Christensen
-            </h1>
-            <h3 className="main-text-subheader">
-              Full Stack Software Engineer
-            </h3>
-            <p className="main-text-paragraph">
-              Customer service expert looking to bridge the communication gap between developers and end users. 
-            </p>
-            <Button 
-              text={'Contact Me'} 
-              icon={<i class="fas fa-angle-right"></i>}
-            />
-          </div>
-          <div className="portrait-wrapper">
-            <Portrait />
-            <MobilePortraitButtons />
+      <div className="app-wrapper">
+        <div className="main-wrapper">
+          <div className="main-container">
+            <div className="main-text-container">
+              <h1
+                className='main-text'
+              >
+                Hi, I am Will Christensen
+              </h1>
+              <h3 className="main-text-subheader">
+                Full Stack Software Engineer
+              </h3>
+              <p className="main-text-paragraph">
+                Customer service expert looking to bridge the communication gap between developers and end users.
+              </p>
+              <Button
+                text={'Contact Me'}
+                icon={<i class="fas fa-angle-right"></i>}
+              />
+            </div>
+            <div className="regular-portrait-wrapper">
+              <Portrait/>
+            </div>
+            <MobilePortrait />
           </div>
         </div>
+        <Skills />
       </div>
-      <Skills />
-      <Footer items={items} icons={icons}/>
+      <Footer items={items} icons={icons} />
     </>
   )
 }
