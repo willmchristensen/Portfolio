@@ -1,5 +1,5 @@
 import './SkillDropDown.css'
-import Skill from "../Skill"
+import Skill from "./Skill"
 import { useState } from 'react';
 
 function SkillDropDown({ skill }) {
@@ -7,8 +7,8 @@ function SkillDropDown({ skill }) {
     const titles = Object.keys(skill.skills);
     const percentages = Object.values(skill.skills);
     const [isOpen, setIsOpen] = useState(false);
-    const dropDownSkillsClass = isOpen ? "dropdown-skills-container" : 'hidden';
-    const toggleDropDown = () => setIsOpen(!isOpen);
+    const dropDownSkillsClass = `dropdown-skills${isOpen ? "-open" : ''}`;
+    const toggleDropDown = () => setIsOpen(!isOpen);    
     return (
         <div className="dropdown-container">
             <div className="dropdown-title-container">
@@ -24,12 +24,12 @@ function SkillDropDown({ skill }) {
                 {
                     isOpen ?
                         <i
-                            class="fas fa-caret-up"
+                            className="fas fa-caret-up"
                             onClick={toggleDropDown}
                         ></i>
                         :
                         <i
-                            class="fas fa-caret-down"
+                            className="fas fa-caret-down"
                             onClick={toggleDropDown}
                         ></i>
                 }

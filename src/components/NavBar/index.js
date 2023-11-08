@@ -1,16 +1,7 @@
 import './NavBar.css';
 import NavBarItem from './NavBarItem';
 
-const items = [
-    'Home',
-    'About',
-    'Skills',
-    'Services',
-    'Portfolio',
-    'Contact'
-];
-
-function NavBar() {
+function NavBar({items}) {
     
     return (
         <nav className='navbar-wrapper'>

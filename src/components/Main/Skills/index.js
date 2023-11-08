@@ -20,7 +20,7 @@ const skills = [
             'Python': 50,
             'Node Js': 50,
             'SQL': 50,
-            'Sequelize': 50,
+            'Sequelize': 65,
         }
     }
 ];
@@ -30,7 +30,7 @@ function Skills() {
         <div className="main-wrapper">
             <div className="skills-container">
                 <div className="skills-title-container">
-                     <h1 className='main-text'>Skills</h1>
+                    <h1 className='main-text'>Skills</h1>
                     <h3 className='main-text-subheader'>My technical level</h3>
                 </div>
                 <div className="skills-dropdowns-container">

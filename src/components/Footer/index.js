@@ -1,5 +1,5 @@
 import './Footer.css';
-import MobileMenu from '../MobileMenu';
+import MobileMenu from './MobileMenu';
 function Footer({items,icons}){
     return(
         <footer className="main-footer-container">

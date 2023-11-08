@@ -4,3 +4,6 @@
     margin: .5rem 0;
     font-size: 2rem;
 }
+.portrait-button:hover > i{
+    color: var(--blue);
+}

@@ -37,10 +37,13 @@
     border-radius: 10px;
 }
 .seventy{
-    width: calc(.70 * 35vw);
+    width: calc(.70 * 100%);
 }
 .fifty{
-    width: calc(.50 * 35vw);
+    width: calc(.50 * 100%);
+}
+.sixty-five{
+    width: calc(.65 * 100%);    
 }
 .skill-title{
     font-size: 1rem;

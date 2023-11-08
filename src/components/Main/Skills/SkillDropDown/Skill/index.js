@@ -2,7 +2,8 @@ function Skill({skill,percentage}) {
 
     const percentages = {
         70: 'seventy',
-        50: 'fifty'
+        50: 'fifty',
+        65: 'sixty-five'
     }
 
     const skillLevelClass = "skill-level " + (percentages[percentage]);

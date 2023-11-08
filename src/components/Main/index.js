@@ -1,32 +1,13 @@
 import './Main.css'
-import NavBar from './NavBar';
 import Skills from './Skills';
 import Portrait from './Portrait';
 import Button from './Button';
-import Footer from './Footer';
 import MobilePortrait from './MobilePortrait';
-const items = [
-  'Home',
-  'About',
-  'Skills',
-  'Services',
-  'Portfolio',
-  'Contact'
-];
-
-const icons = [
-  <i class="fas fa-home"></i>,
-  <i class="fas fa-id-card"></i>,
-  <i class="fas fa-sliders-h"></i>,
-  <i class="fas fa-project-diagram"></i>,
-  <i class="fas fa-code-branch"></i>,
-  <i class="fas fa-address-book"></i>
-]
+import AboutMe from './AboutMe';
 
 function Main() {
   return (
     <>
-      <NavBar></NavBar>
       <div className="app-wrapper">
         <div className="main-wrapper">
           <div className="main-container">
@@ -48,14 +29,14 @@ function Main() {
               />
             </div>
             <div className="regular-portrait-wrapper">
-              <Portrait/>
+              <Portrait />
             </div>
             <MobilePortrait />
           </div>
         </div>
         <Skills />
+        <AboutMe />
       </div>
-      <Footer items={items} icons={icons} />
     </>
   )
 }

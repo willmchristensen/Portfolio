@@ -12,12 +12,12 @@
 .mobile-menu-row{
     width: 100%;
 }
-.hidden{
-    display: none;
-}
 .mobile-footer{
     display: flex;
     justify-content: flex-end;
     height: 4rem;
     width: 100%;
+}
+.hidden{
+    display: none;
 }
