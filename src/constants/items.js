@@ -14,3 +14,13 @@ export const icons = [
     <i class="fas fa-code-branch"></i>,
     <i class="fas fa-address-book"></i>
 ];
+export const services = [
+    {
+        icon: <i class="fas fa-laptop-code"></i>,
+        title: 'Frontend Developer',
+    },
+    {
+        icon: <i class="fas fa-database"></i>,
+        title: 'Backend Developer',
+    }
+]

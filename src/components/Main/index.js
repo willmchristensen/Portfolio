@@ -4,6 +4,7 @@ import Portrait from './Portrait';
 import Button from './Button';
 import MobilePortrait from './MobilePortrait';
 import AboutMe from './AboutMe';
+import Services from './Services';
 
 function Main() {
   return (
@@ -36,6 +37,7 @@ function Main() {
         </div>
         <Skills />
         <AboutMe />
+        <Services />
       </div>
     </>
   )

@@ -1,0 +1,15 @@
+.service-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 20rem;
+    border-radius: 10px;
+    background-color: white;
+}
+.service-card-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

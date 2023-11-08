@@ -1,7 +1,4 @@
-.about-me-wrapper{
-    width: 90%;
-}
-.about-me-title-wrapper{
+.about-me-title-container{
     display: flex;
     flex-direction: column;
     align-items: center;

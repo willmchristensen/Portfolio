@@ -2,8 +2,8 @@ import './AboutMe.css';
 import Button from '../Button';
 function AboutMe() {
     return (
-        <div className="about-me-wrapper">
-            <div className="about-me-title-wrapper">
+        <div className="main-wrapper">
+            <div className="about-me-title-container">
                 <h1 className='about-me-title'>About Me</h1>
                 <h3 className='about-me-subtitle'>My introduction</h3>
             </div>
