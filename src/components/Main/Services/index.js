@@ -12,7 +12,7 @@ function Services() {
                 {
                     services.map(s => {
                         return (
-                            <ServicesCard icon={s.icon} title={s.title} />
+                            <ServicesCard icon={s.icon} title={s.title} bullets={s.bullets}/>
                         )
                     })
                 }

@@ -1,0 +1,11 @@
+.services-info-wrapper{
+    padding: 2rem;
+}
+.services-modal-list-item{
+    list-style:circle;
+    margin-bottom: 1rem;
+}
+.services-info-title{
+    margin-bottom: 1rem;
+    /* margin-left: -1rem; */
+}

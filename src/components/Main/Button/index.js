@@ -1,7 +1,7 @@
 import './Button.css'
-function Button({text, icon}){
+function Button({onClick,text, icon}){
     return(
-        <button className="button">
+        <button onClick={onClick}className="button">
             <span className="button-text">
                 {text}  
             </span>

@@ -1,0 +1,33 @@
+.portfolio-wrapper{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.portfolio-container{
+    display: flex;
+    align-items: center;
+    height: 20rem;
+    width: 75%;
+}
+.fa-arrow-alt-circle-left{
+    font-size: 2rem;
+}
+.fa-arrow-alt-circle-right{
+    font-size: 2rem;
+}
+.fa-arrow-alt-circle-left:hover{
+    cursor: pointer;
+}
+.fa-arrow-alt-circle-right:hover{
+    cursor: pointer;
+}
+.circles-container{
+    display: flex;
+}
+.circles-container > i:hover{
+    cursor: pointer;
+}
+.circles-container > i{
+    margin:.25rem;
+}

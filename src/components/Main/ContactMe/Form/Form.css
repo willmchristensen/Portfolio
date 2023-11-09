@@ -1,0 +1,45 @@
+.contact-me-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+.form-row{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--light-blue);
+    width: 100%;
+}
+.form-row-large{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--light-blue);
+}
+.form-row-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 2rem;
+}
+input{
+    background-color: transparent;
+    border: none;
+    height: 4rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+label{
+    color: var(--dark-grey);
+    padding: 1rem;
+}
+textarea{
+    background-color: transparent;
+    border: none;
+    height: 8rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}

@@ -5,6 +5,8 @@ import Button from './Button';
 import MobilePortrait from './MobilePortrait';
 import AboutMe from './AboutMe';
 import Services from './Services';
+import Portfolio from './Portfolio';
+import ContactMe from './ContactMe';
 
 function Main() {
   return (
@@ -38,6 +40,8 @@ function Main() {
         <Skills />
         <AboutMe />
         <Services />
+        <Portfolio />
+        <ContactMe />
       </div>
     </>
   )
