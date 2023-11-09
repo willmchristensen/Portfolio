@@ -6,6 +6,14 @@ export const items = [
     'Portfolio',
     'Contact'
 ];
+export const locations = [
+    '#home',
+    '#about',
+    '#skills',
+    '#services',
+    '#portfolio',
+    '#contact'
+]
 export const icons = [
     <i class="fas fa-home"></i>,
     <i class="fas fa-id-card"></i>,

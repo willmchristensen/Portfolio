@@ -1,5 +1,8 @@
 .services-info-wrapper{
+    display: flex;
+    justify-content: center;
     padding: 2rem;
+    width: 40vw;
 }
 .services-modal-list-item{
     list-style:circle;

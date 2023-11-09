@@ -1,7 +1,7 @@
 import './NavBar.css';
 import NavBarItem from './NavBarItem';
 
-function NavBar({items}) {
+function NavBar({items, location}) {
     
     return (
         <nav className='navbar-wrapper'>
@@ -11,7 +11,8 @@ function NavBar({items}) {
                         return(
                             <NavBarItem 
                                 key={index}
-                                item={item} 
+                                item={item}
+                                location={location[index]} 
                             />
                         )
                     })

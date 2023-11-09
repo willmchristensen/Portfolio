@@ -30,16 +30,29 @@ input{
     border: none;
     height: 4rem;
     padding-left: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 label{
     color: var(--dark-grey);
-    padding: 1rem;
+    padding: .5rem;
 }
 textarea{
     background-color: transparent;
     border: none;
     height: 8rem;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+.submit-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: var(--black);
+    border-radius: var(--button-border-radius);
+    padding: var(--button-padding);
+    margin-top: 1rem;
+    width: 9rem;
+    height: 3rem;
+    color: var(--light-grey);
 }

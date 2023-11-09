@@ -1,9 +1,11 @@
 import './NavBarItem.css'
 
-function NavBarItem({item}){
-    return(
+function NavBarItem({ item, location}) {
+    return (
         <li className="navbar-item-container">
-            {item}
+            <a href={location} className="navbar-link">
+                {item}
+            </a>
         </li>
     )
 }

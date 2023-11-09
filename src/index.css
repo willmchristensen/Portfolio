@@ -21,3 +21,6 @@
 body{
     background-color: var(--light-grey);
 }
+/* html{
+    scroll-behavior: smooth;
+} */

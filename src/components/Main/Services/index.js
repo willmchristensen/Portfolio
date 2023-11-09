@@ -3,7 +3,7 @@ import { services } from '../../../constants/items';
 import ServicesCard from './ServicesCard';
 function Services() {
     return (
-        <div className="main-wrapper">
+        <div className="main-wrapper" id="services">
             <div className="about-me-title-container">
                 <h1 className='about-me-title'>Services</h1>
                 <h3 className='about-me-subtitle'>What i offer</h3>

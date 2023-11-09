@@ -35,30 +35,28 @@ function ContactForm() {
   };
 
   return (
-    <div className="contact-me-form-container">
-      <form className="contact-me-form" onSubmit={handleSubmit}>
-        <div className="form-row-container">
-          <div className="form-row">
-            <label htmlFor="name">Name</label>
-            <input type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} required />
-          </div>
-          <div className="form-row">
-            <label htmlFor="email">Email</label>
-            <input type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-          </div>
+    <form className="contact-me-form" onSubmit={handleSubmit}>
+      <div className="form-row-container">
+        <div className="form-row">
+          <label htmlFor="name">Name</label>
+          <input type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} required />
         </div>
         <div className="form-row">
-          <label htmlFor="project">Project</label>
-          <input type="text" id="project" name="project" value={project} onChange={(e) => setProject(e.target.value)} required />
+          <label htmlFor="email">Email</label>
+          <input type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
         </div>
-        <div className="form-row-large">
-          <label htmlFor="message">Message</label>
-          <textarea id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required />
-        </div>
+      </div>
+      <div className="form-row">
+        <label htmlFor="project">Project</label>
+        <input type="text" id="project" name="project" value={project} onChange={(e) => setProject(e.target.value)} required />
+      </div>
+      <div className="form-row-large">
+        <label htmlFor="message">Message</label>
+        <textarea id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required />
+      </div>
 
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+      <button className="submit-button" type="submit">Submit</button>
+    </form>
   );
 }
 

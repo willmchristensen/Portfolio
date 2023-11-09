@@ -8,8 +8,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh;
-    width: 90%;
+    height: 75vh;
+    width: 75%;
 }
 .main-container{
     display: flex;
@@ -23,7 +23,6 @@
 .main-text{
     font-size: var(--title);
     color: var(--black);
-    width: 25ch;
 }
 .main-text-subheader{
     width: 35ch;

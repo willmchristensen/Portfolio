@@ -20,6 +20,7 @@
     border-radius: 10px;
 }
 .about-me-container{
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
@@ -27,7 +28,7 @@
     width: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 .about-me-paragraph-experience{
     display: flex;
@@ -52,4 +53,7 @@
     text-align: center;
     display: block;
     width: 10ch;
+}
+.about-me-button > a{
+    text-decoration: none;
 }

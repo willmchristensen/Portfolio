@@ -27,7 +27,7 @@ const skills = [
 
 function Skills() {
     return (
-        <div className="main-wrapper">
+        <div className="main-wrapper" id="skills">
             <div className="skills-container">
                 <div className="skills-title-container">
                     <h1 className='main-text'>Skills</h1>

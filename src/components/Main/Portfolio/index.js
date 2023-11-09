@@ -27,7 +27,7 @@ function Portfolio() {
     const circleClasses = projects.map((p, index) => (index === project ? "fas fa-circle" : "far fa-circle"));
 
     return (
-        <div className="main-wrapper">
+        <div className="main-wrapper" id="portfolio">
             <div className="about-me-title-container">
                 <h1 className='about-me-title'>Portfolio</h1>
                 <h3 className='about-me-subtitle'>Most recent work</h3>

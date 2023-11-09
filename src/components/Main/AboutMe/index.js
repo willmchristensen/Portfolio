@@ -2,7 +2,7 @@ import './AboutMe.css';
 import Button from '../Button';
 function AboutMe() {
     return (
-        <div className="main-wrapper">
+        <div className="main-wrapper" id="about">
             <div className="about-me-title-container">
                 <h1 className='about-me-title'>About Me</h1>
                 <h3 className='about-me-subtitle'>My introduction</h3>
@@ -39,7 +39,9 @@ function AboutMe() {
                             </div>
                         </div>
                         <div className="about-me-button">
-                            <Button text="Download CV" icon={<i class="fas fa-download"></i>} />
+                            <a href='/assets/Resume.pdf' download='Resume.pdf'>
+                                <Button text="Download CV" icon={<i class="fas fa-download"></i>} />
+                            </a>
                         </div>
                     </div>
                 </div>

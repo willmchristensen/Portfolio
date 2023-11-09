@@ -12,7 +12,7 @@ function Main() {
   return (
     <>
       <div className="app-wrapper">
-        <div className="main-wrapper">
+        <div className="main-wrapper" id="home">
           <div className="main-container">
             <div className="main-text-container">
               <h1
@@ -37,8 +37,8 @@ function Main() {
             <MobilePortrait />
           </div>
         </div>
-        <Skills />
         <AboutMe />
+        <Skills />
         <Services />
         <Portfolio />
         <ContactMe />

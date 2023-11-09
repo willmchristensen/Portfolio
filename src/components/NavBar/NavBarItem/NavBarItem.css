@@ -11,3 +11,7 @@
     cursor: pointer;
     color: var(--blue);
 }
+.navbar-link{
+    text-decoration: none;
+    color: var(--light-grey);
+}
