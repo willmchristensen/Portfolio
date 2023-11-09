@@ -1,10 +1,13 @@
 .main-footer-container{
-    position: sticky;
-    bottom: 0;
+    display: flex;
+    height: 4rem;
 }
 .main-footer-wrapper{
     width: 100%;
 }
 .footer-title{
     font-size: 2rem;
+}
+.footer-content{
+    width: 50%;
 }

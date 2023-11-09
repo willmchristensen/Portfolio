@@ -3,7 +3,7 @@ import Hamburger from './Hamburger';
 import SideBarItem from './SideBarItem';
 import { useEffect, useRef, useState } from 'react';
 
-function MobileMenu({ items, icons }) {
+function MobileMenu({ items, icons, locations}) {
     const [showMenu, setShowMenu] = useState(false);
     const menuClassName = 'mobile-menu' + (showMenu ? '' : ' hidden')
     const mobileMenuRef = useRef();
@@ -13,7 +13,7 @@ function MobileMenu({ items, icons }) {
         const closeMenu = () => setShowMenu(false);
         const toggleMenu = () => setShowMenu(!showMenu);
         const listener = (event) => {
-            console.log('event.target.classList', event.target.classList);
+            console.log(event.target.classList)
             const isButton = event.target.classList.contains('custom-hamburger-button');
             const isIcon = event.target.classList.contains('fas');
             const isSidebar = event.target.classList.contains('sidebar-item') || event.target.classList.contains('sidebar-item-text') || event.target.classList.contains('sidebar-item-icon') ;
@@ -30,6 +30,7 @@ function MobileMenu({ items, icons }) {
                 toggleMenu();
             }
         };
+        
         document.addEventListener('mousedown', listener)
         return () => {
             document.removeEventListener('mousedown', listener)
@@ -56,6 +57,7 @@ function MobileMenu({ items, icons }) {
                                     key={index}
                                     item={item}
                                     icon={icons[index]}
+                                    location={locations[index]}
                                 />
                             )
                         })
@@ -69,6 +71,7 @@ function MobileMenu({ items, icons }) {
                                     key={index}
                                     item={item}
                                     icon={icons[index + 3]}
+                                    location={locations[index + 3]}
                                 />
                             )
                         })

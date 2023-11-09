@@ -56,3 +56,14 @@ textarea{
     height: 3rem;
     color: var(--light-grey);
 }
+.submit-button:hover{
+    cursor: pointer;
+}
+.submit-button-container{
+    display: flex;
+    justify-content: center;
+}
+.response-container{
+    height: 2rem;
+    width: 100%;
+}

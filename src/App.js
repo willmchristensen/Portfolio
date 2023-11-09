@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <NavBar items={items} location={locations}></NavBar>
       <Main></Main>
-      <Footer items={items} icons={icons} />
+      <Footer items={items} icons={icons} location={locations}/>
     </div>
   );
 }

@@ -1,0 +1,13 @@
+.message-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 2rem;
+}
+.message-text{
+    color: rgb(21, 163, 21);
+}
+.error-text{
+    color: red;
+}

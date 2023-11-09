@@ -1,16 +1,22 @@
 import './Footer.css';
 import MobileMenu from './MobileMenu';
-function Footer({items,icons}){
+import FooterPortraitButtons from './FooterButtons';
+function Footer({items,icons,location}){
     return(
-        <footer className="main-footer-container">
-            <div className="main-footer-wrapper">
-                <h2 className="footer-title">
-                    Will Christensen
-                </h2>
-                <h3 className='main-text-subheader'>
-                    Fullstack Developer
-                </h3>
-                <MobileMenu items={items} icons={icons}/>
+        <footer className="main-footer-wrapper">
+            <div className="main-footer-container">
+                <div className="footer-content">
+                    <h2 className="footer-title">
+                        Will
+                    </h2>
+                    <span className='footer-subtitle'>
+                        Fullstack Developer
+                    </span>
+                </div>
+                <div className="footer-content">
+                    <FooterPortraitButtons />
+                </div>
+                {/* <MobileMenu items={items} icons={icons} locations={location}/> */}
             </div>
         </footer>
     )

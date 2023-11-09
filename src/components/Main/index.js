@@ -26,10 +26,12 @@ function Main() {
               <p className="main-text-paragraph">
                 Customer service expert looking to bridge the communication gap between developers and end users.
               </p>
-              <Button
-                text={'Contact Me'}
-                icon={<i class="fas fa-angle-right"></i>}
-              />
+              <a href="#contact" className='contact-me-button'>
+                <Button
+                  text={'Contact Me'}
+                  icon={<i class="fas fa-angle-right"></i>}
+                />
+              </a>
             </div>
             <div className="regular-portrait-wrapper">
               <Portrait />

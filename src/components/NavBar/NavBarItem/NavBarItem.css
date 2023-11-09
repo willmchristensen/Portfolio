@@ -7,7 +7,7 @@
     margin: 1rem 0;
     height: 2rem;
 }
-.navbar-item-container:hover{
+.navbar-item-container > a:hover{
     cursor: pointer;
     color: var(--blue);
 }
