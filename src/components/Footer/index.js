@@ -1,7 +1,6 @@
 import './Footer.css';
-import MobileMenu from './MobileMenu';
 import FooterPortraitButtons from './FooterButtons';
-function Footer({items,icons,location}){
+function Footer(){
     return(
         <footer className="main-footer-wrapper">
             <div className="main-footer-container">
@@ -16,7 +15,6 @@ function Footer({items,icons,location}){
                 <div className="footer-content">
                     <FooterPortraitButtons />
                 </div>
-                {/* <MobileMenu items={items} icons={icons} locations={location}/> */}
             </div>
         </footer>
     )
