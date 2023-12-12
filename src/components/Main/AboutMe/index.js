@@ -11,7 +11,7 @@ function AboutMe() {
                 <div className="about-me-content-wrapper">
                 <img
                     className="about-me-image"
-                    src="/assets/portrait.jpg"
+                    src="/willmchristensen/assets/portrait.jpg"
                     alt="portrait-of-me"
                 />
                 </div>

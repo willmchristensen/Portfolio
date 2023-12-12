@@ -8,7 +8,7 @@ function Portrait() {
         <div className="circle third"></div>
         <img
           className="portrait"
-          src="/assets/portrait.jpg"
+          src="/willmchristensen/assets/portrait.jpg"
           alt="portrait-of-me"
         />
       </div>

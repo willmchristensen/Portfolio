@@ -50,18 +50,18 @@ export const projects = [
         title:'ShareBnb',
         description:'This Airbnb clone facilitates user-generated listings and reviewsfor accommodations.',
         link: 'https://sharebnb-wpig.onrender.com/',
-        image: '/assets/sharebnb-splash.png'
+        image: '/willmchristensen/assets/sharebnb-splash.png'
     },
     {
         title:'Mu',
         description:'This Resident Advisor clone facilitates user-generated events and postsregarding the electronic music industry.',
         link:'https://mu-zfwi.onrender.com/',
-        image: '/assets/mu-splash.png'
+        image: '/willmchristensen/assets/mu-splash.png'
     },
     {
         title:'Query',
         description:'This Quora clone facilitates user-generated questions, answers, and replies for spaces.',
         link: 'https://query-bhy5.onrender.com/',
-        image: '/assets/query-splash.png'
+        image: '/willmchristensen/assets/query-splash.png'
     }
 ]
